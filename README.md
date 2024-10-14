@@ -28,9 +28,9 @@ Following is a step-by-step approach employed to perform Linear Search Algorithm
 
 3 Check for Match :
 
-   . If it matches, return the index.
+    . If it matches, return the index.
    
-   . If not, move to the next element.
+    . If not, move to the next element.
    
 4 Repeat : Continue until all elements are checked.
 
