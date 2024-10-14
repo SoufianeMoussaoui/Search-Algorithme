@@ -1,28 +1,51 @@
 # Search-Algorithme
-Linear search
-An example of a computer searching 
-algorithm
- is linear search. This is a simple algorithm used to find a value in a list of 
-data
-. The algorithm runs as follows:
 
-Identify a search term.
-Look at the first item in the list.
-Compare the item with the search term.
-Is the current item the same as the search term? If so, the item has been found. If not, move to the next item.
-Repeat from step two until the last item in the list has been reached.
-If the end of the list has been reached and the search term has not been found, then the search term is not in the list and the algorithm can stop.
-Linear search example
-This algorithm could be used to search the following list for the number 1:
+![Search-Timeline](https://github.com/user-attachments/assets/be66175d-364b-44ee-be57-66a52df6eec5)
 
-3, 2, 4, 1, 5
 
-The algorithm would produce:
 
-3, 2, 4, 1, 5 (1 compared to 3 - not found)
+Searching algorithms are techniques used to locate a target element within a collection of data. 
+The choice of searching algorithm depends on factors such as the size and organization of the dataset, the nature of the target element,
+and the efficiency requirements of the application.
+Commonly used searching algorithms include linear search, binary search, depth-first search (DFS), breadth-first search (BFS), and more. Each algorithm has its own characteristics, advantages, and limitations
 
-3, 2, 4, 1, 5 (1 compared to 2 - not found)
+___________________________________________________________________________________________________________________________________________________________________________________________
 
-3, 2, 4, 1, 5 (1 compared to 4 - not found)
 
-3, 2, 4, 1, 5 (1 compared to 1- found)
+# Linear Search  : 
+
+Linear search, often known as sequential search, is the most basic search technique. 
+In this type of search, you go through the entire list and try to fetch a match for a single element. 
+If you find a match, then the address of the matching target element is returned. 
+
+On the other hand, if the element is not found, then it returns a NULL value. 
+
+Following is a step-by-step approach employed to perform Linear Search Algorithm
+ 
+ 1 Initialization : Start at the first element (index 0).
+
+2 Comparison : Compare the current element with the target.
+
+3 Check for Match :
+
+   . If it matches, return the index.
+   
+   . If not, move to the next element.
+   
+4 Repeat : Continue until all elements are checked.
+
+5 End of List : If the target is not found, return -1 or None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
