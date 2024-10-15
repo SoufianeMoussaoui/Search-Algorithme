@@ -9,7 +9,6 @@ The choice of searching algorithm depends on factors such as the size and organi
 and the efficiency requirements of the application.
 Commonly used searching algorithms include linear search, binary search, depth-first search (DFS), breadth-first search (BFS), and more. Each algorithm has its own characteristics, advantages, and limitations
 
-___________________________________________________________________________________________________________________________________________________________________________________________
 
 
 # Linear Search  : 
@@ -36,6 +35,42 @@ Following is a step-by-step approach employed to perform Linear Search Algorithm
 
 5 End of List : If the target is not found, return -1 or None
 
+
+Complexity: 
+𝑂
+(
+𝑛
+)
+for unsorted data.
+
+Use Cases: Simple and unsorted data structures where simplicity is prioritized over speed.
+
+# Binary Search
+
+The algorithm works by repeatedly dividing the list into half portions, which can contain the item to be searched until we narrow down the possible location to just one.
+
+## Time and Space Complexity of Binary Search Algorithm : 
+
+| Case         | Time Complexity |
+|--------------|----------------|
+| Best Case    | O(1)           |
+| Average Case | O(log N)       |
+| Worst Case   | O(log N)       |
+
+## Binary search vs Linear search : 
+
+![linear-vs-binary-search](https://github.com/user-attachments/assets/78ad0758-04b3-4871-8e9b-317707aa90d8)
+
+
+### Analysis:
+
+Linear Search: The search time increases significantly as the vector size grows, which reflects its 
+O(n) time complexity.
+
+Binary Search: The search time remains almost constant or grows very slowly as the vector size increases, showing the 
+O(logN) efficiency of Binary Search, which is much faster for larger datasets when compared to Linear Search.
+
+Conclusion : the image demonstrates that Binary Search is more efficient for larger datasets compared to Linear Search, as expected due to their differing time complexities.
 
 
 
