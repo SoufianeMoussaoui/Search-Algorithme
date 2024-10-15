@@ -27,9 +27,9 @@ Following is a step-by-step approach employed to perform Linear Search Algorithm
 
 3 Check for Match :
 
-    . If it matches, return the index.
+     If it matches, return the index.
    
-    . If not, move to the next element.
+     If not, move to the next element.
    
 4 Repeat : Continue until all elements are checked.
 
@@ -73,10 +73,9 @@ O(logN) efficiency of Binary Search, which is much faster for larger datasets wh
 Conclusion : the image demonstrates that Binary Search is more efficient for larger datasets compared to Linear Search, as expected due to their differing time complexities.
 
 
+# Depth First Search : (DFS) 
 
-
-
-
+DFS explores as deep as possible along a branch before backtracking. It uses a stack (either explicitly or through recursion) to keep track of the nodes
 
 
 
