@@ -77,9 +77,58 @@ Conclusion : the image demonstrates that Binary Search is more efficient for lar
 
 DFS explores as deep as possible along a branch before backtracking. It uses a stack (either explicitly or through recursion) to keep track of the nodes
 
+![image](https://github.com/user-attachments/assets/c8a8f3e6-725d-4f91-922d-dd314f8b9f7a)
+
+We start from vertex 0, the DFS algorithm starts by putting it in the Visited list and putting all its adjacent vertices in the stack
+
+![image](https://github.com/user-attachments/assets/7ee5b3f6-b10a-4838-9fce-c432888aea10)
 
 
+Next, we visit the element at the top of stack i.e. 1 and go to its adjacent nodes. Since 0 has already been visited, we visit 2 instead.
 
+![image](https://github.com/user-attachments/assets/45cdfac4-7bf3-43d0-bab7-f2e8582763c5)
+
+
+Vertex 2 has an unvisited adjacent vertex in 4, so we add that to the top of the stack and visit it.
+
+
+![image](https://github.com/user-attachments/assets/11b6b693-4ac5-49a5-bf41-42580db3d37e)
+
+![image](https://github.com/user-attachments/assets/5c57da3e-a7d5-47a3-8d19-85b8302cc26b)
+
+After we visit the last element 3, it doesn't have any unvisited adjacent nodes, so we have completed the Depth First Traversal of the graph.
+
+![image](https://github.com/user-attachments/assets/b2d4c415-edf9-48fe-aae5-36a132aed192)
+
+
+## DFS Pseudocode (recursive implementation)
+
+The pseudocode for DFS is shown below. In the init() function, notice that we run the DFS function on every node. This is because the graph might have two different disconnected parts 
+
+so to make sure that we cover every vertex, we can also run the DFS algorithm on every node.
+
+    DFS(G, u)
+      u.visited = true
+      for each v ∈ G.Adj[u]
+          if v.visited == false
+              DFS(G,v)
+     
+    init() {
+       For each u ∈ G
+           u.visited = false
+       For each u ∈ G
+           DFS(G, u)
+      }
+
+## The complexity of the Depth-First Search (DFS) algorithm:
+
+| Aspect             | Complexity            |
+|--------------------|-----------------------|
+| Time Complexity    | O(V + E)              |
+| Space Complexity   | O(V)                  |
+| Where              |                       |
+| V                  | Number of vertices    |
+| E                  | Number of edges       |
 
 
 
